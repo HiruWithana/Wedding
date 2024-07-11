@@ -1,0 +1,103 @@
+.rsvpName {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 10px 0;
+}
+
+.regret{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    padding: 10px 0;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="radio"]:focus,
+.uneditable-input:focus {
+    border-color: #28A745;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0) inset, 0 0 8px rgba(126, 239, 104, 0);
+    outline: 0 none;
+}
+
+
+/* Applying styles when checking the buttons */
+input[type="radio"]:checked {
+    background-color: #28A745;
+    border-color: #28A745;
+}
+
+#acceptFields,
+#declineFields {
+    display: none;
+    transition: display 0.5s ease-in-out;
+}
+
+#acceptFields.show,
+#declineFields.show {
+    display: block;
+}
+
+
+
+
+
+
+
+.modalLeaf {
+    width: 25%;
+}
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+    .modalLeaf {
+        width: 75%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide the radio input */
+.famMembers input[type="radio"] {
+    display: none;
+}
+
+/* Style the label for unchecked state */
+.famMembers label {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style the label for checked state */
+.famMembers input[type="radio"]:checked+label {
+    background-color: #408558;
+    color: white;
+    /* Optional: Change text color to contrast with the green background */
+}
+
+

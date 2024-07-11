@@ -1,0 +1,121 @@
+header {
+    position: fixed;
+    z-index: 999;
+
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+nav {
+    overflow: hidden;
+}
+
+.ulStyle-none {
+    list-style: none;
+}
+
+.primary-nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.primary-nav-links li a {
+    color: black;
+}
+
+.bg-cream{
+    background-color: #D7DCD6;
+}
+
+.primary-navigation {
+    position: fixed;
+    height: 70dvh;
+    width: 20vw;
+    inset: 0 0 0 0;
+    background-color: #557D68;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: min(10vh, 10rem) 2em 0 2em;
+    transform: translateX(-100%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.primary-nav-links {
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.primary-nav-links li a {
+    color: white;
+}
+
+.secondary-navigation {
+    position: fixed;
+    height: 30dvh;
+    width: 20vw;
+    inset: 70% 0 0 0;
+    z-index: 6000;
+    flex-direction: column;
+    transform: translateX(-100%);
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    left: 2em;
+    color: black;
+    border: none;
+    transition: all 0.8s ease;
+
+}
+
+.mobile-nav-toggle::after {
+    content: '\f0c9';
+    /* Font Awesome unicode for fa-bars */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1rem;
+    /* Adjust icon size */
+    color: inherit;
+    /* Inherit color from parent */
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+
+    margin-left: 10vw;
+    background-color: #fff;
+}
+
+
+.mobile-nav-toggle[aria-expanded="true"]::after {
+    content: '\f00d';
+    /* Font Awesome unicode for fa-times */
+}
+
+
+
+@media (max-width: 767px) {
+
+
+    .primary-navigation {
+        width: 75vw;
+    }
+
+    .secondary-navigation {
+        width: 75vw;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        margin-left: 35vw;
+    }
+}
