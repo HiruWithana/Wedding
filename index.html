@@ -1,11 +1,565 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Wedding Web Design</title>
+
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="images/favIcon.png">
 
 
-    <h1>Test Title for ddd</h1>
-    
-  </body>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- connect to goole fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- main font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- body font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/magicText.css">
+    <link rel="stylesheet" href="style/rsvp.css">
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container mt-4 p-3 primary-header d-flex justify-content-between align-items-center">
+
+        <!-- Toggle Button -->
+        <button class="mobile-nav-toggle rounded-pill px-4 py-2" aria-controls="primary-navigation"
+            aria-expanded="false">
+            Menu
+        </button>
+
+        <!-- Nav Bar -->
+        <nav class="pt-2">
+
+            <div id="primary-navigation" data-visible="false" class="primary-navigation">
+
+
+                <ul class="primary-nav-links p-0 ulStyle-none">
+
+                    <li class="mb-3 mb-md-0">
+                        <a href="#event" class="text-decoration-none font-playfair">Event</a>
+                    </li>
+
+                    <li class="mb-3 mb-md-0">
+                        <a href="#tidbits" class="text-decoration-none font-playfair">Tidbits</a>
+                    </li>
+
+                    <li class="mb-3 mb-md-0">
+                        <a href="#qna" class="text-decoration-none font-playfair">Q&A</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div id="secondary-navigation" data-visible="false" class="secondary-navigation d-flex gap-3">
+
+                <div class="container d-flex h-100">
+                    <div class="row">
+
+
+                        <div class="col-12 mt-4">
+                            <ul class="ulStyle-none">
+                                <li>
+                                    <p class="text-dark">Check Our Photo Albums</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 d-flex align-items-center">
+
+                            <ul class="nav-links ulStyle-none">
+                                <li class="mb-1">
+                                    <a href="https://www.facebook.com/ParadoxFootageLK/posts/pfbid029bPMd7NnYz5nKsyzBCask9MK7sZct2UK8AEZ1tpHN9SQMcyFrroFKvERk87WfSbBl" target="_blank"
+                                        class="text-decoration-none fw-bold text-dark">Preshoot</a>
+                                </li>
+
+                                <li class="mb-1">
+                                    <a href="https://www.facebook.com/Prizmasl/posts/pfbid033RBAZ8wr4shBd3aNAdnEKc54dy9eoPQjVeYbX1doNC7kicDWzaauYBHdMJ4MZRAGl"
+                                        class="text-decoration-none fw-bold text-dark" target="_blank">Wedding</a>
+                                </li>
+
+                                <li class="mb-1">
+                                    <a href="https://www.facebook.com/GovinduZithila/posts/pfbid0E5xou8iJv3biu2WCDMwWjiBaYswJzDvAyRBYQgyDL6D1JqFDtGUU2Vr5Pp6M1evMl"
+                                        class="text-decoration-none fw-bold text-dark" target="_blank">Honeymoon</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-6 d-flex align-items-end">
+                            <img src="images/flower.gif" class="img-fluid" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- left side | changes images onscroll -->
+            <div class="left-side col-xl-7 p-0">
+                <div class="overlay position-relative p-md-5">
+
+                    <div class="position-absolute bottom-0 p-5">
+                        <!-- Couple Name -->
+                        <h1 class="coupleName text-white font-playfair fw-bold">GOVINDU & <br>CHRISHANI</h1>
+                        <!-- Love Quote -->
+                        <p class="text-white loveQuote">We said yes and we can't wait to have you on our special day !
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="right-side col-xl-5 p-0">
+
+                <!-- Event Date & Info -->
+                <div id="event" class="event position-relative d-flex align-items-center justify-content-center">
+
+                    <!-- Design Image | Top right -->
+                    <img src="images/leaf-top.png"
+                        class="right-img img-fluid position-absolute end-0 top-0" alt="">
+                    <!-- Design Image | bottom left -->
+                    <img src="images/leaf-bottom.png"
+                        class="right-img img-fluid position-absolute bottom-0 start-0" alt="">
+
+                    <!-- Info -->
+                    <div class="z-99">
+                        <!-- Save the Date -->
+                        <h1 class="animateIn starry-text text-center">
+                            <!-- spark text -->
+                            <span class="magic">
+                                <span class="magic-star">
+                                    <svg viewBox="0 0 512 512">
+                                        <path
+                                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                    </svg>
+                                </span>
+                                <span class="magic-star">
+                                    <svg viewBox="0 0 512 512">
+                                        <path
+                                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                    </svg>
+                                </span>
+                                <span class="magic-star">
+                                    <svg viewBox="0 0 512 512">
+                                        <path
+                                            d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                                    </svg>
+                                </span>
+                                <span class="magic-text">Save the Date</span>
+                            </span>
+                        </h1>
+
+                        <!-- Date -->
+                        <h3 class="animateIn delay-2 text-center fw-normal mt-5" style="line-height: 1.5">
+                            Monday<br>21<sup>st</sup> August,
+                            2024</h3>
+                        <!-- Time -->
+                        <h4 class="animateIn delay-3 text-center fw-normal mt-4">10.00 <small>am</small> - 15.00
+                            <small>pm</small>
+                        </h4>
+                        <!-- Venue -->
+                        <h5 class="animateIn delay-4 text-center fw-normal mt-4">Hilton Colombo Residences</h5>
+
+                        <!-- RSVP Button -->
+                        <div class="animateIn delay-5 d-flex justify-content-center mt-5">
+                            <a class="btn btn-outline-success fw-bold px-4 py-2 rounded-pill rsvpBtn"
+                                data-bs-toggle="modal" data-bs-target="#rsvpModal">SEND
+                                RSVP</a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <!-- Tidbits -->
+                <div id="tidbits" class="tidbits d-flex align-items-center justify-content-center">
+
+
+                    <div class="">
+
+                        <div class="p-5">
+
+                            <!-- Title -->
+                            <h1 class="font-playfair fw-bold animateIn">Tidbits</h1>
+                            <hr class="animateHr">
+
+
+                            <!-- Quiz 1 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-1">How did you first meet?</p>
+                                <p class="animateIn delay-1"><span class="rounded-pill badge bg-success">Govindu</span>
+                                    Technological means</p>
+                            </div>
+
+                            <!-- Quiz 2 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-2">Who made the first move? How?</p>
+                                <p class="animateIn delay-2"><span class="rounded-pill badge bg-success">Chrishani</span>
+                                    Him
+                                    talking to me 🤭</p>
+                            </div>
+
+                            <!-- Quiz 3 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-3">Who's going to take out the trash?</p>
+                                <p class="animateIn delay-3"><span class="rounded-pill badge bg-success">Chrishani</span>
+                                    Depends on who can't stand the amount of trash first</p>
+                            </div>
+
+                            <!-- Quiz 4 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-4">If you could relive one day together, which day
+                                    would
+                                    it be?</p>
+                                <p class="animateIn delay-4"><span class="rounded-pill badge bg-success">Govindu</span>
+                                    The
+                                    day i asked her out 💕</p>
+                            </div>
+
+                            <!-- Quiz 5 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-5">What's the best meal you have eaten together?</p>
+                                <p class="animateIn delay-5"><span class="rounded-pill badge bg-success">Chrishani</span>
+                                    For Givindu, all meals with me is good 😅 I like Barista & Keku Cafe.</p>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <!-- Q&A -->
+                <div id="qna" class="qna bg-white d-flex align-items-center justify-content-center">
+
+
+                    <div class="">
+
+                        <div class="p-5">
+
+                            <!-- Title -->
+                            <h1 class="font-playfair fw-bold animateIn">Q&A</h1>
+                            <hr class="animateHr">
+
+
+                            <!-- Quiz 1 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-1">When is the RSVP deadline?</p>
+                                <p class="animateIn delay-1">Please RSVP by August 10th, so we can have an accurate
+                                    headcount :)
+                                </p>
+                            </div>
+
+                            <!-- Quiz 2 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-2">Where is the venue?</p>
+                                <p class="animateIn delay-2">Hilton Residences, Colombo, Sri Lanka</p>
+                            </div>
+
+                            <!-- Quiz 3 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-2">Can I bring a date?</p>
+                                <p class="animateIn delay-3">Sure, just add it in the RSVP link</p>
+                            </div>
+
+                            <!-- Quiz 4 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-4">Is it okay to take pictures with our phones and
+                                    cameras
+                                    during the
+                                    wedding?</p>
+                                <p class="animateIn delay-4">Yes and please share the photos with us.</p>
+                            </div>
+
+                            <!-- Quiz 5 -->
+                            <div class="my-5">
+                                <p class="fw-bold animateIn delay-5">What should I wear?</p>
+                                <p class="animateIn delay-5">Something to wear to weddings.</p>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <!-- See You -->
+                <div
+                    class="seeYou position-relative bg-white position-relative d-flex flex-column align-items-center justify-content-center">
+
+                    <img src="images/seeYou-top.png"
+                        class="img-fluid w-75 position-absolute top-0 end-0" alt="">
+                    <img src="images/seeYou-bottom.png"
+                        class="img-fluid w-75 position-absolute bottom-0 start-0" alt="">
+
+                    <!-- title -->
+                    <div class="z-99">
+                        <h1 class="display-2 font-playfair text-center animateIn delay-2">See you at the wedding</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- MODALS -->
+
+        <!-- RSVP Modal -->
+        <div class="modal fade" id="rsvpModal" tabindex="-1" aria-labelledby="fontModal" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content position-relative">
+
+                    <img src="images/modal-leaf-top.png"
+                        class="img-fluid modalLeaf position-absolute top-0 end-0" alt="">
+                    <img src="images/modal-leaf-bottom.png"
+                        class="img-fluid modalLeaf position-absolute bottom-0" alt="">
+
+
+                    <div class="container-fluid border-4 h-100 p-5">
+
+
+
+                        <div class="row h-100">
+
+                            <div class="col-md-6 h-100 d-none d-md-flex align-items-center justify-content-center">
+                                <img src="images/modalPhoto.jpg" class="img-fluid" alt="">
+                            </div>
+
+
+
+                            <div
+                                class="position-relative col-md-6 h-100 d-flex flex-column align-items-center justify-content-center p-md-5">
+
+                                <!-- Modal Close Button -->
+                                <div class="position-absolute top-0 end-0 p-md-5">
+                                    <button type="button" class="btn-close modalClose" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+
+                                <div class="p-md-5">
+
+                                    <h1 class="display-2 font-playfair">RSVP</h1>
+
+                                    <h6 class="fw-bold mb-4">Your kind respond is required by August tenth, 2024
+                                    </h6>
+
+
+
+                                    <form action="">
+
+                                        <!-- Name -->
+                                        <input type="text" class="form-control rsvpName" placeholder="Your Name"
+                                            autofocus>
+
+                                        <!-- Accept or Reject -->
+                                        <div class="mt-4">
+
+                                            <!-- Accept -->
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio" name="responseBtn"
+                                                    id="acceptBtn" onclick="toggleFields()" checked>
+                                                <label class="form-check-label" for="acceptBtn">
+                                                    Joyfully Accept
+                                                </label>
+                                            </div>
+
+                                            <!-- Reject -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="responseBtn"
+                                                    id="rejectBtn" onclick="toggleFields()">
+                                                <label class="form-check-label" for="rejectBtn">
+                                                    Regretfully Decline
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Accept DIV -->
+                                        <div id="acceptFields" class="mt-4 show">
+                                            <label class="mb-4">How many family members will attend the event?</label>
+
+                                            <ul class="p-0 list-unstyled famMembers d-flex flex-wrap gap-2">
+
+                                                <li class="">
+                                                    <input type="radio" id="mem1" name="famMember" checked />
+                                                    <label class="btn btn-outline-success rounded-pill p-2 px-3"
+                                                        for="mem1">
+                                                        1
+                                                    </label>
+                                                </li>
+
+                                                <li class="">
+                                                    <input type="radio" id="mem2" name="famMember" />
+                                                    <label class="btn btn-outline-success rounded-pill p-2 px-3"
+                                                        for="mem2">
+                                                        2
+                                                    </label>
+                                                </li>
+
+                                                <li class="">
+                                                    <input type="radio" id="mem3" name="famMember" />
+                                                    <label class="btn btn-outline-success rounded-pill p-2 px-3"
+                                                        for="mem3">
+                                                        3
+                                                    </label>
+                                                </li>
+
+                                                <li class="">
+                                                    <input type="radio" id="mem4" name="famMember" />
+                                                    <label class="btn btn-outline-success rounded-pill p-2 px-3"
+                                                        for="mem4">
+                                                        4
+                                                    </label>
+                                                </li>
+
+                                                <li class="">
+                                                    <input type="radio" id="mem5" name="famMember" />
+                                                    <label class="btn btn-outline-success rounded-pill p-2 px-3"
+                                                        for="mem5">
+                                                        5+
+                                                    </label>
+                                                </li>
+
+
+                                            </ul>
+
+
+                                        </div>
+
+                                        <!-- Reject DIV -->
+                                        <div id="declineFields" class="mt-4">
+                                            <label for="reason" class="mb-4">Please tell us why you can't
+                                                attend:</label>
+                                            <input type="text" class="form-control regret" placeholder="Your Message">
+                                        </div>
+
+
+                                        <div>
+                                            <a href="#" class="btn btn-success rounded-pill mt-4">Submit</a>
+                                        </div>
+
+
+                                    </form>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Bootstrap JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+
+        <!-- Gsap -->
+        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+        <!-- Scroll Trigger -->
+        <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+        <!-- custom js -->
+        <script src="script/nav.js"></script>
+        <script src="script/pin.js"></script>
+        <script src="script/animateIn.js"></script>
+        <script src="script/magicText.js"></script>
+        <script src="script/form.js"></script>
+
+
+
+</body>
+
 </html>
