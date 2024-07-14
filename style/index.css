@@ -1,4 +1,12 @@
 /* general styling */
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+
+}
+
 .font-playfair {
     font-family: "Playfair Display", serif;
 }
@@ -7,69 +15,74 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
-body {
-    font-family: "Montserrat", sans-serif;
-}
-
 .loveQuote {
     font-size: 20px;
 }
+.coupleName {
+    font-size: 5vw;
+}
+.mainTitle{
+    z-index: 9000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20%, rgba(17, 17, 17, 0.9) 80%);
+    width: 100%;
 
-.left-side {
+}
+
+
+/* scrollable action */
+
+.scrollSection {
+    height: 100vh;
+}
+
+
+.photoContainer {
+    position: relative;
+    overflow: hidden;
     height: 100vh;
     background-image: url(../images/couple1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
-    transition: all 0.8s ease;
+    background-repeat: no-repeat;
 }
 
-.right-img {
-    z-index: 1;
-}
-
-.z-99{
-    z-index: 99;
-}
-
-.overlay {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40%, rgba(17, 17, 17, 0.9) 90%);
+.photo {
+    position: absolute;
     width: 100%;
     height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
-.event {
-    height: 100vh;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, #fff 80%, #F8F9FA 100%);
+.heroImg {
+    background-image: url(../images/couple1.jpg);
+    z-index: 5;
+}
+
+.tidbitsImg {
+    background-image: url(../images/couple2.jpg);
+    z-index: 4;
+}
+
+.qnaImg {
+    background-image: url(../images/couple3.jpg);
+    z-index: 3;
 
 }
 
-.tidbits {
-    background: linear-gradient(180deg, #F8F9FA 20%, #fff 80%);
+.seeYouImg {
+    background-image: url(../images/couple4.jpg);
+    z-index: 2;
 
 }
 
-.qna {
-}
 
-.seeYou {
-    height: 100vh;
-}
 
 .right-img {
     width: 55%;
 }
-
-
-
-.coupleName{
-    font-size: 5vw;
-}
-
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
@@ -79,7 +92,7 @@ body {
     }
 
     .coupleName{
-        font-size: 10vw;
+        font-size: 12vw;
     }
 }
 
@@ -101,7 +114,7 @@ body {
  /* Media Query for Laptops and Desktops */
  @media (min-width: 1025px) and (max-width: 1280px) {
     .coupleName{
-        font-size: 8vw;
+        font-size: 5.5vw;
     }
 }
 
