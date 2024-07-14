@@ -1,35 +1,30 @@
-gsap.registerPlugin(ScrollTrigger);
+// Ensure GSAP and ScrollTrigger are loaded
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.registerPlugin(ScrollTrigger);
 
-if (window.innerWidth > 768) {
-    const bgImages = [
-        'url(images/couple1.jpg)', // Image for the event div
-        'url(images/couple2.jpg)', // Image for the story div
-        'url(images/couple3.jpg)', // Image for the tidbits div
-        'url(images/couple4.jpg)' // Image for the seeYou div
-    ];
+    const scrollSections = document.querySelectorAll('.scrollSection');
+    const photos = document.querySelectorAll('.photo');
 
-    const sections = document.querySelectorAll('.right-side > div');
-
-    sections.forEach((section, index) => {
-        ScrollTrigger.create({
-            trigger: section,
-            start: "top center",
-            end: "bottom center",
-            onEnter: () => changeBackgroundImage(index),
-            onEnterBack: () => changeBackgroundImage(index),
-            markers: false
+    scrollSections.forEach((section, index) => {
+        gsap.to(photos[index], {
+            scrollTrigger: {
+                trigger: section,
+                start: "top center",
+                end: "bottom center",
+                onEnter: () => gsap.to(photos[index], { opacity: 1, duration: 0.5 }),
+                onLeave: () => gsap.to(photos[index], { opacity: 0, duration: 0.5 }),
+                onEnterBack: () => gsap.to(photos[index], { opacity: 1, duration: 0.5 }),
+                onLeaveBack: () => gsap.to(photos[index], { opacity: 0, duration: 0.5 }),
+            },
         });
     });
 
-    function changeBackgroundImage(index) {
-        document.querySelector('.left-side').style.backgroundImage = bgImages[index];
-    }
-
+    // Pin the image container
     ScrollTrigger.create({
-        trigger: ".right-side",
+        trigger: '.left',
         start: "top top",
-        end: "bottom 90%",
-        pin: ".left-side",
-        markers: false
+        end: "bottom bottom",
+        pin: true,
+        pinSpacing: false
     });
-}
+});
